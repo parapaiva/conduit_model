@@ -37,7 +37,7 @@ class WebPage():
             value (str): Value to be defined on the field
         """
         if isinstance(field, str):
-            field = self.driver.find_element_by_xpath(field)
+            field = self.driver.find_element(By.XPATH, field)
         tag = field.tag_name
         if tag == 'input' or tag == "textarea":
             field.clear()
