@@ -1,5 +1,6 @@
 import logging
 from selenium import webdriver
+import platform
 
 
 class WebDriver(webdriver.Chrome):
@@ -22,6 +23,11 @@ class WebDriver(webdriver.Chrome):
                 "C:/bin/chromedriver.exe".
         """
         self.address = address
+        system = platform.system()
+        if system == "Darwin":
+            self.path = "/usr/bin/google-chrome1/chromedriver"
+        elif system == "Linux":
+            self.path = "\Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome\chromedriver"
         super().__init__(executable_path=path)
         logging.info(f"Chrome driver successfully started using '{path}'")
         self.start(maximize_window)
