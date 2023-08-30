@@ -11,7 +11,6 @@ def test_get_text():
     # Access Home Page
     driver = WebDriver(
         address="https://realworld.svelte.dev/",
-        path="C:/bin/chromedriver.exe",
         maximize_window=False)
     home = HomePage(driver)
 
