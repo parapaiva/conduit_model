@@ -9,10 +9,8 @@ I created a model for the Home Page model that returns an Article Page when the 
 The example test case `test_get_article_text.py` shows a test script that accesses the first article, and retrieves its texts to assert its initial content.
 
 ### How to run this test
-Prerequisites: 
-
-1. chrome browser installed,
-2. chrome webdriver for the browser version (you can get it at https://chromedriver.chromium.org/downloads)
+1. Have chrome browser installed,
+2. Have chrome webdriver for the browser version (you can get it at https://chromedriver.chromium.org/downloads)
 2.1 If your system is Windows, move the webdriver to `C:/bin/`
 2.2 If your system is Linux, move the webdriver to  `/usr/bin/google-chrome1`
 2.3 If your system is Mac, move the webdriver to 	`/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome`
